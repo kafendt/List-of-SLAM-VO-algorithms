@@ -1,0 +1,140 @@
+\documentclass[a4paper,12pt]{scrartcl}
+\usepackage{url}
+\usepackage{longtable}                %% make tables look nice
+\usepackage{multirow}                 %% for \multirow and \multicolumn commands
+\usepackage{hyperref}
+
+%% Bibliography-----------------------------------
+\usepackage[sorting=none, backend=bibtex8]{biblatex}
+\usepackage{csquotes}
+\addbibresource{refs.bib}
+
+
+\begin{document}
+
+{\footnotesize
+\begin{longtable}{l|l|l}
+  \caption{List of SLAM / VO algorithms}\\[2mm]
+  \label{tab:list_found_slam_algorithms}
+    \textbf{Name} & \textbf{References} & \textbf{Code}\\
+    \hline
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{AprilSLAM}     & \cite{Wang2016} (2016), \cite{Olson2011} (2011)                                             & {\url{github.com/ProjectArtemis/aprilslam}}                           \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{ARM SLAM}      & \cite{Klingensmith2016} (2016)                                                              & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{BatSLAM}       & \cite{Steckel2015} (2015), \cite{Steckel2013} (2013)                                        & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{BundleFusion}  & \cite{Dai2017} (2011)                                                                       & {\url{github.com/niessner/BundleFusion}}                              \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{CD SLAM}       & \cite{Pirker2011} (2011), \cite{Pirker2010} (2010)                                          & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{C-KLAM}        & \cite{Nerurkar2014} (2014)                                                                  & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{CNN SLAM}      & \cite{Tateno2017} (2017)                                                                    & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{COP SLAM}      & \cite{Dubbelman2015} (2015), \cite{Dubbelman2013} (2013), \cite{Dubbelman2010} (2010)       & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{CoSLAM}        & \cite{Zou2013} (2013)                                                                       & {\url{github.com/danping/CoSLAM}}                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{DolphinSLAM}   & \cite{Zaffari2016} (2016), \cite{Silveira2015} (2015)                                       & {\url{github.com/dolphin-slam}}                                       \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{DP SLAM}       & \cite{Eliazar2004} (2004), \cite{Eliazar2003} (2003)                                        & {\url{users.cs.duke.edu/~parr/dpslam}}                                \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{DPPTAM}        & \cite{Concha2015b} (2015)                                                                   & {\url{github.com/alejocb/dpptam}}                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{DSO}           & \cite{Engel2016} (2016)                                                                     & {\url{github.com/JakobEngel/dso}}                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{DT SLAM}       & \cite{Daniel2014} (2014)                                                                    & {\url{github.com/plumonito/dtslam}}                                   \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{DTAM}          & \cite{Newcombe2011} (2011)                                                                  & {\url{github.com/anuranbaka/OpenDTAM}}                                \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{DVO}           & \cite{Kerl2013} (2013)                                                                      & {\url{github.com/tum-vision/dvo_slam}}                                \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{EIF SLAM}      & \cite{He2011} (2011), \cite{AuatCheein2011} (2011), \cite{Zhou2008} (2008)                  & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+                           & \cite{Samsuri2015} (2015), \cite{Sola2014} (2014), \cite{Kurt-Yavuz2012} (2012)             &                                                                       \\
+    \textbf{EKF SLAM}      & \cite{Paz2008} (2008), \cite{Bailey2006} (2006), \cite{Bailey2006a} (2006)                  & -                                                                     \\
+                           & \cite{Riisgaard2004} (2004), \cite{Thrun1999} (2002)                                        &                                                                       \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{ElasticFusion} & \cite{Whelan2015} (2015)                                                                    & {\url{github.com/mp3guy/ElasticFusion}}                               \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{FAB-MAP}       & \cite{Glover2012} (2012), \cite{Glover2010} (2010), \cite{Paul2010} (2010)                  & {\url{github.com/arrenglover/openfabmap}}                             \\
+                           & \cite{Cummins2009} (2009), \cite{Cummins2008} (2008)                                        &                                                                       \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{FastSLAM}      & \cite{Abouzahir2014} (2014) \cite{Naminski2013} (2013), \cite{Kurt-Yavuz2012} (2012),       & {\url{github.com/bushuhui/fastslam}}                                  \\
+                           & \cite{Thrun2004} (2004), \cite{Montemerlo2003} (2003), \cite{Montemerlo2002} (2002)         &                                                                       \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{FrameSLAM}     & \cite{Konolige2008} (2008)                                                                  & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{GPSLAM}        & \cite{Pirker2011a} (2011)                                                                   & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{GP-SLAM}       & \cite{Yan2017} (2017), \cite{Dong2017} (2017)                                               & {\url{github.com/gtrll/gpslam}}                                       \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{Graph SLAM}    & \cite{Grisetti2010} (2010), \cite{Olson2006} (2006), \cite{Thrun2006} (2006)                & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{Hector SLAM}   & \cite{Kohlbrecher2011} (2011)                                                               & \multirow{2}{17em}{\url{github.com/tu-darmstadt-ros-pkg/hector_slam}} \\
+                           &                                                                                             &                                                                       \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{KinectFusion}  & \cite{Pirovano2012} (2012), \cite{Izadi2011} (2011), \cite{Newcombe2011a} (2011)            & {\url{github.com/PointCloudLibrary/pcl}}                              \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{Kintinious}    & \cite{Whelan2013a} (2013), \cite{Whelan2013} (2013), \cite{Whelan2012} (2012)               & {\url{github.com/mp3guy/Kintinuous}}                                  \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{LSD SLAM}      & \cite{Engel2014} (2014), \cite{Engel2013} (2013)                                            & {\url{github.com/tum-vision/lsd_slam}}                                \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{MonoSLAM}      & \cite{Russo2014} (2014), \cite{Davison2007} (2007)                                          & {\url{github.com/rrg-polito/mono-slam}}                               \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{MR SLAM}       & \cite{Choudhary2016} (2016), \cite{Alexandre2013} (2013), \cite{Zhou2006} (2006),           & -                                                                     \\
+                           & \cite{Howard2006} (2006), \cite{Liu2003} (2003)                                             &                                                                       \\
+    \textbf{NID SLAM}      & \cite{Pascoe2017} (2017)                                                                    & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{OKVIS}         & \cite{Leutenegger2015} (2015), \cite{Leutenegger2014} (2014), \cite{Leutenegger2013} (2013) & {\url{github.com/ethz-asl/okvis_ros}}                                 \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{ORB SLAM}      & \cite{Mur-Artal2017} (2017), \cite{Mur-Artal2016a} (2016), \cite{Mur-Artal2015} (2015)      & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{Pop-up SLAM}   & \cite{Yang2016} (2016)                                                                      & {\url{github.com/shichaoy/pop_up_image}}                              \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{PTAM}          & \cite{Klein2007} (2007)                                                                     & {\url{github.com/Oxford-PTAM/PTAM-GPL}}                               \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{RatSLAM}       & \cite{Ball2013} (2013), \cite{Maddern2009} (2009), \cite{Milford2008} (2008),               & {\url{github.com/davidmball/ratslam}}                                 \\
+                           & \cite{Milford2006} (2006), \cite{Milford2005} (2005), \cite{Milford2004} (2004)             &                                                                       \\
+    \textbf{RD SLAM}       & \cite{Tan2013a} (2013)                                                                      & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{REBVO}         & \cite{Tarrio2016} (2016)                                                                    & {\url{github.com/JuanTarrio/rebvo}}                                   \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{REMODE}        & \cite{Pizzoli2014} (2014)                                                                   & {\url{github.com/uzh-rpg/rpg_open_remode}}                            \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{RFM SLAM}      & \cite{Agarwal2016} (2016)                                                                   & {\url{github.com/sauravag/edpl-rfmslam}}                              \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{RGB-D SLAM}    & \cite{Endres2012} (2012) \cite{Endres2012a} (2012)                                          & {\url{github.com/felixendres/rgbdslam_v2}}                            \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{RKSLAM}        & \cite{Liu2016} (2016)                                                                       & {\url{zjucvg.net/rkslam/rkslam.html}}                                 \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{ROVIO}         & \cite{Bloesch2015} (2014)                                                                   & {\url{github.com/ethz-asl/rovio}}                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{RSLAM}         & \cite{Mei2011} (2011)                                                                       & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{ScaViSLAM}     & \cite{Strasdat2011} (2011)                                                                  & {\url{github.com/strasdat/ScaViSLAM}}                                 \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{SEIF SLAM}     & \cite{Torres-Gonzalez2014} (2014), \cite{Walter2007} (2007)                                 & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{SeqSLAM}       & \cite{bai2017} (2017), \cite{Sunderhauf2013} (2013), \cite{Milford2012} (2012)              & {\url{github.com/subokita/OpenSeqSLAM}}                               \\
+                           & \cite{Siam2017} (2017)                                                                      & {\url{github.com/siam1251/Fast-SeqSLAM}}                              \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{SLAM++}        & \cite{Salas-moreno2013} (2013)                                                              & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{SlamDunk}      & \cite{Fioraio2015} (2015)                                                                   & {\url{github.com/m4nh/skimap_ros}}                                    \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{SVO}           & \cite{Forster2017} (2017), \cite{Forster2014a} (2014)                                       & {\url{github.com/uzh-rpg/rpg_svo}}                                    \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{UKF SLAM}      & \cite{Wu2015} (2015), \cite{Wang2013} (2014), \cite{Huang2009} (2009)                       & -                                                                     \\
+                           &                                                                                             &                                                                       \\ [-3mm]
+    \textbf{vSLAM}         & \cite{Karlsson2005} (2005)                                                                  & {\url{wiki.ros.org/vslam}}                                            \\
+\end{longtable}
+}
+
+\newpage
+%Bibiliography
+\printbibliography
+
+\end{document}
