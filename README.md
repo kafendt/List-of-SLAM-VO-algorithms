@@ -10,5 +10,7 @@ as you wish.
 
 [List rendered through Jupyter](http://nbviewer.jupyter.org/github/kafendt/List-of-SLAM-VO-algorithms/blob/master/SLAM_table.pdf)
 
+[Download](https://raw.githubusercontent.com/kafendt/List-of-SLAM-VO-algorithms/master/SLAM_table.pdf)
+
 Note: This is a work in progress, I wasn't able to check all references yet so please don't be offended if a reference
 is not perfect or a link in the references doesn't work.
