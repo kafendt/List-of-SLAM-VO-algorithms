@@ -5,3 +5,7 @@ same thing I figured I should probably just make this list public. So, here you 
 topics I was able to find, related references and a link to the code if available. Feel free to extend and use the list
 as you wish.
 
+
+[List in google document viewer](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/kafendt/List-of-SLAM-VO-algorithms/master/SLAM_table.pdf)
+
+[List rendered through Jupyter](http://nbviewer.jupyter.org/github/kafendt/List-of-SLAM-VO-algorithms/blob/master/SLAM_table.pdf)
