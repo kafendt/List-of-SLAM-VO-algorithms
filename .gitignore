@@ -1,0 +1,16 @@
+*.log
+*.aux
+*.fls
+*.bbl
+*.blg
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.lof
+*.lot
+*.swp
+*.fuse_hidden*
+*blx.bib
+*.bcf
+*.xml
