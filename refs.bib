@@ -1,3 +1,98 @@
+@article{Pire2015,
+abstract = {This paper describes a visual SLAM system based on stereo cameras and focused on real-time localization for mobile robots. To achieve this, it heavily exploits the parallel nature of the SLAM problem, separating the time-constrained pose estimation from less pressing matters such as map building and refinement tasks. On the other hand, the stereo setting allows to reconstruct a metric 3D map for each frame of stereo images, improving the accuracy of the mapping process with respect to monocular SLAM and avoiding the well-known bootstrapping problem. Also, the real scale of the environment is an essential feature for robots which have to interact with their surrounding workspace. A series of experiments, on-line on a robot as well as off-line with public datasets, are performed to validate the accuracy and real-time performance of the developed method.},
+author = {Pire, Taihu and Fischer, Thomas and Civera, Javier and {De Cristoforis}, Pablo and Berlles, Julio Jacobo},
+doi = {10.1109/IROS.2015.7353546},
+file = {:home/chris/Documents/Mendeley Desktop/Stereo parallel tracking and mapping for robot localization.pdf:pdf},
+isbn = {9781479999941},
+issn = {21530866},
+journal = {IEEE Int. Conf. Intell. Robot. Syst.},
+pages = {1373--1378},
+title = {{Stereo parallel tracking and mapping for robot localization}},
+volume = {2015-Decem},
+year = {2015}
+}
+@article{Zhu2017,
+abstract = {Visual odometry is an important research prob- lem for computer vision and robotics. In general, the feature-based visual odometry methods heavily rely on the accurate correspondences between lo- cal salient points, while the direct approaches could make full use of whole image and perform dense 3D reconstruction simultaneously. However, the di- rect visual odometry usually suffers from the draw- back of getting stuck at local optimum especially with large displacement, which may lead to the in- ferior results. To tackle this critical problem, we propose a novel scheme for stereo odometry in this paper, which is able to improve the convergence with more accurate pose. The key of our approach is a dual Jacobian optimization that is fused into a multi-scale pyramid scheme. Moreover, we intro- duce a gradient-based feature representation, which enjoys the merit of being robust to illumination changes. Furthermore, a joint direct odometry ap- proach is proposed to incorporate the information from the last frame and previous keyframes. We have conducted the experimental evaluation on the challenging KITTI odometry benchmark, whose promising results show that the proposed algorithm is very effective for stereo visual odometry. 1},
+author = {Zhu, Jianke},
+file = {:home/chris/Documents/Mendeley Desktop/Image Gradient-based Joint Direct Visual Odometry for Stereo Camera.pdf:pdf},
+journal = {Int. Jt. Conf. Artif. Intell.},
+keywords = {Robotics and Vision: Robotics and Vision,Robotics and Vision: Vision and Perception},
+pages = {4558--4564},
+title = {{Image Gradient-based Joint Direct Visual Odometry for Stereo Camera}},
+url = {https://www.ijcai.org/proceedings/2017/0636.pdf},
+year = {2017}
+}
+@article{Zhang2015a,
+abstract = {We propose a real-time method for odometry and mapping using range measurements from a 2-axis lidar moving in 6-DOF. The problem is hard because the range measurements are received at different times, and errors in motion estimation can cause mis-registration of the resulting point cloud. To date, coherent 3D maps can be built by off-line batch methods, often using loop closure to correct for drift over time. Our method achieves both low-drift and low-computational complexity with- out the need for high accuracy ranging or inertial measurements. The key idea in obtaining this level of performance is the division of the complex problem of simultaneous localization and mapping, which seeks to optimize a large number of variables simultaneously, by two algorithms. One algorithm performs odometry at a high frequency but low fidelity to estimate velocity of the lidar. Another algorithm runs at a frequency of an order of magnitude lower for fine matching and registration of the point cloud. Combination of the two algorithms allows the method to map in real-time. The method has been evaluated by a large set of experiments as well as on the KITTI odometry benchmark. The results indicate that the method can achieve accuracy at the level of state of the art offline batch methods.},
+archivePrefix = {arXiv},
+arxivId = {cs/9605103},
+author = {Zhang, Ji and Singh, Sanjiv and Cadena, Cesar and Carlone, Luca and Carrillo, Henry and Latif, Yasir and Scaramuzza, Davide and Neira, Jose and Reid, Ian and Leonard, John J. and Mur-Artal, Raul and Tardos, Juan D. and Paper, Conference and Caruso, David and Engel, Jakob and Cremers, Daniel},
+doi = {10.15607/RSS.2014.X.007},
+eprint = {9605103},
+file = {:home/chris/Documents/Mendeley Desktop/LOAM$\backslash$: Lidar Odometry and Mapping in Real-time.pdf:pdf},
+isbn = {9781479999941},
+issn = {15523098},
+journal = {IEEE Trans. Robot.},
+keywords = {Cameras,Computational modeling,Factor graphs,Lenses,Nonlinear distortion,Simultaneous localization and mapping,Three-dimensional displays,localization,mapping,maximum a posteriori estimation,perception,robots,sensing,simultaneous localization and mapping (SLAM)},
+number = {July},
+pages = {141--148},
+pmid = {7353366},
+primaryClass = {cs},
+title = {{LOAM: Lidar Odometry and Mapping in Real- time}},
+volume = {32},
+year = {2015}
+}
+@article{Buczko2016,
+abstract = {{\textcopyright} 2016 IEEE.In this paper, we present an iterative two-stage scheme for precise and robust frame-To-frame feature-based ego-motion estimation using stereo cameras. We analyze the characteristics of the optical flows and reprojection errors that are independently induced by each of the decoupled six degrees of freedom motion. As we will show, the different characteristics of these induced optical flows lead to a reprojection error that depends on the coordinates of the features. When using a proper normalization of the reprojection error, this coordinatedependency can be almost completely removed for decoupled motions. Furthermore, we present a way to use these results for automotive application where rotation and forward motion are coupled. This is done by compensating for the flow that is induced by the rotation, which decouples the translation flow from the overall flow. The resulting method generalizes the ROCC approach [4], where a robust outlier criterion was introduced and proved to increase robustness and quality for large forward translation motions. Therewith the proposed method generalizes ROCC to almost all possible automotive motions. The performance of the method is evaluated on Kitti benchmark and currently2 reaches the best translation error of all camera-based methods.},
+author = {Buczko, Martin and Willert, Volker},
+doi = {10.1109/ITSC.2016.7795703},
+file = {:home/chris/Documents/Mendeley Desktop/Flow-Decoupled Normalized Reprojection Error for Visual Odometry.pdf:pdf},
+isbn = {9781509018895},
+journal = {IEEE Conf. Intell. Transp. Syst. Proceedings, ITSC},
+pages = {1161--1167},
+title = {{Flow-decoupled normalized reprojection error for visual odometry}},
+year = {2016}
+}
+@inproceedings{Zhang2014,
+abstract = {Visual odometry can be augmented by depth in- formation such as provided by RGB-D cameras, or from lidars associated with cameras. However, such depth information can be limited by the sensors, leaving large areas in the visual images where depth is unavailable. Here, we propose a method to utilize the depth, even if sparsely available, in recovery of camera motion. In addition, the method utilizes depth by triangulation from the previously estimated motion, and salient visual features for which depth is unavailable. The core of our method is a bundle adjustment that refines the motion estimates in parallel by processing a sequence of images, in a batch optimization. We have evaluated our method in three sensor setups, one using an RGB-D camera, and two using combinations of a camera and a 3D lidar. Our method is rated 2 on the KITTI odometry benchmark irrespective of sensing modality, and is rated 1 among visual odometry methods.},
+address = {Chicago},
+author = {Zhang, Ji and Kaess, Michael and Singh, Sanjiv},
+booktitle = {Int. Conf. Intell. Robot. Syst.},
+file = {:home/chris/Documents/Mendeley Desktop/Real-time depth enhanced monocular odometry.pdf:pdf},
+isbn = {9781479969340},
+pages = {4973--4980},
+title = {{Real-time Depth Enhanced Monocular Odometry - IROS{\_}2014.pdf}},
+url = {https://www.ri.cmu.edu/pub{\_}files/2014/9/IROS{\_}2014.pdf},
+year = {2014}
+}
+@article{Buczko2016a,
+abstract = {In this paper, we present an outlier removal scheme for stereo-based visual odometry which is especially suited for improving high-speed pose change estimations in large-scale depth environments. First we investigate the vari- ance of the reprojection error on the 3D position of a feature given a fixed error in pose change to conclude that a detection of outliers based on a fixed threshold on the reprojection error is inappropriate. Then we propose an optical flow dependent feature-adaptive scaling of the reprojection error to reach almost invariance to the 3D position of each feature. This feature-adaptive scaling is derived from an approximation showing the relation between longitudinal pose change of the camera, absolute value of the optical flow, and distance of the feature. Using this scaling, we develop an iterative alternating scheme to guide the separation of inliers from outliers. It optimizes the tradeoff between finding a good criterion to remove outliers based on a given pose change and improving the pose change hypothesis based on the current set of inliers. Including the new outlier removal scheme into a pure two-frame stereo-based visual odometry pipeline without applying bundle adjustment or SLAM-filtering we are currently ranked amongst the top camera-based algorithms and furthermore outperform camera and laser scanner methods in Kitti benchmark's high- speed scenarios.},
+author = {Buczko, Martin and Willert, Volker},
+doi = {10.1109/IVS.2016.7535429},
+file = {:home/chris/Documents/Mendeley Desktop/How to Distinguish Inliers from Outliers in Visual Odometry for High-speed Automotive Applications.pdf:pdf},
+isbn = {9781509018215},
+journal = {IEEE Intell. Veh. Symp. Proc.},
+number = {Iv},
+pages = {478--483},
+title = {{How to distinguish inliers from outliers in visual odometry for high-speed automotive applications}},
+volume = {2016-Augus},
+year = {2016}
+}
+@article{Pire2017,
+abstract = {This paper describes a real-time feature-based stereo SLAM system that is robust and accurate in a wide variety of conditions – indoors, outdoors, with dynamic objects, changing light conditions, fast robot motions and large-scale loops. Our system follows a parallel-tracking-and-mapping strategy: a tracking thread estimates the camera pose at frame rate; and a mapping thread updates a keyframe-based map at a lower frequency. The stereo constraints of our system allow a robust initialization – avoiding the well-known bootstrapping problem in monocular systems–and the recovery of the real scale. Both aspects are essential for its practical use in real robotic systems that interact with the physical world. In this paper we provide the implementation details, an exhaustive evaluation of the system in public datasets and a comparison of most state-of-the-art feature detectors and descriptors on the presented system. For the benefit of the community, its code for ROS (Robot Operating System) has been released.},
+author = {Pire, Taih{\'{u}} and Fischer, Thomas and Castro, Gast{\'{o}}n and {De Crist{\'{o}}foris}, Pablo and Civera, Javier and {Jacobo Berlles}, Julio},
+doi = {10.1016/j.robot.2017.03.019},
+file = {:home/chris/Documents/Mendeley Desktop/S-PTAM - Stereo Parallel Tracking and Mapping.pdf:pdf},
+issn = {09218890},
+journal = {Rob. Auton. Syst.},
+keywords = {Loop closure,SLAM,Stereo SLAM,Stereo vision,Visual SLAM},
+pages = {27--42},
+publisher = {Elsevier B.V.},
+title = {{S-PTAM: Stereo Parallel Tracking and Mapping}},
+url = {http://dx.doi.org/10.1016/j.robot.2017.03.019},
+volume = {93},
+year = {2017}
+}
 @inproceedings{Engel2015,
 abstract = {We propose a novel Large-Scale Direct SLAM algorithm for stereo cameras (Stereo LSD-SLAM) that runs in real-time at high frame rate on standard CPUs. In contrast to sparse interest-point based methods, our approach aligns images directly based on the photoconsistency of all high- contrast pixels, including corners, edges and high texture areas. It concurrently estimates the depth at these pixels from two types of stereo cues: Static stereo through the fixed-baseline stereo camera setup as well as temporal multi-view stereo exploiting the camera motion. By incorporating both disparity sources, our algorithm can even estimate depth of pixels that are under-constrained when only using fixed-baseline stereo. Using a fixed baseline, on the other hand, avoids scale-drift that typically occurs in pure monocular SLAM.We furthermore propose a robust approach to enforce illumination invariance, capable of handling aggressive brightness changes between frames – greatly improving the performance in realistic settings. In experiments, we demonstrate state-of-the-art results on stereo SLAM benchmarks such as Kitti or challenging datasets from the EuRoC Challenge 3 for micro aerial vehicles.},
 address = {Hamburg},
@@ -8,6 +103,31 @@ isbn = {9781479999941},
 pages = {1935--1942},
 title = {{Large-Scale Direct SLAM with Stereo Cameras}},
 year = {2015}
+}
+@article{Cvisic2015,
+abstract = {In this paper we present a novel algorithm for fast and robust stereo visual odometry based on feature selection and tracking (SOFT). The reduction of drift is based on careful selection of a subset of stable features and their tracking through the frames. Rotation and translation between two consecutive poses are estimated separately. The five point method is used for rotation estimation, whereas the three point method is used for estimating translation. Experimental results show that the proposed algorithm has an average pose error of 1.03{\%} with pro- cessing speed above 10 Hz. According to publicly available KITTI leaderboard, SOFT outperforms all other validated methods. We also present a modified IMU-aided version of the algorithm, fast and suitable for embedded systems. This algorithm employs an IMU for outlier rejection and Kalman filter for rotation refinement. Experiments show that the IMU based system runs at 20 Hz on an ODROID U3 ARM-based embedded computer without any hardware acceleration. Integration of all components is},
+author = {Cvi{\v{s}}i{\'{c}}, Igor and Petrovi{\'{c}}, Ivan},
+doi = {10.1109/ECMR.2015.7324219},
+file = {:home/chris/Documents/Mendeley Desktop/Stereo odometry based on careful feature selection and tracking.pdf:pdf},
+isbn = {9781467391634},
+journal = {2015 Eur. Conf. Mob. Robot. ECMR 2015 - Proc.},
+keywords = {Accuracy,Cameras,Estimation,Feature extraction,Kalman filters,Three-dimensional displays,Visualization},
+pages = {0--5},
+title = {{Stereo odometry based on careful feature selection and tracking}},
+year = {2015}
+}
+@article{Buczko2017,
+author = {Buczko, Martin and Willert, Volker},
+doi = {10.1109/IVS.2017.7995805},
+file = {:home/chris/Documents/Mendeley Desktop/Monocular Outlier Detection for Visual Odometry.pdf:pdf},
+isbn = {978-1-5090-4804-5},
+journal = {2017 IEEE Intell. Veh. Symp.},
+keywords = {Mapping and Localization,Image,Radar,Lidar Signal },
+number = {Iv},
+pages = {739--745},
+title = {{Monocular Outlier Detection for Visual Odometry}},
+url = {http://ieeexplore.ieee.org/document/7995805/},
+year = {2017}
 }
 @article{Zhang2015,
 abstract = {— Here, we present a general framework for com-bining visual odometry and lidar odometry in a fundamental and first principle method. The method shows improvements in performance over the state of the art, particularly in robustness to aggressive motion and temporary lack of visual features. The proposed on-line method starts with visual odometry to estimate the ego-motion and to register point clouds from a scanning lidar at a high frequency but low fidelity. Then, scan matching based lidar odometry refines the motion estimation and point cloud registration simultaneously. We show results with datasets collected in our own experiments as well as using the KITTI odometry benchmark. Our proposed method is ranked {\#}1 on the benchmark in terms of average translation and rotation errors, with a 0.75{\%} of relative position drift. In addition to comparison of the motion estimation accuracy, we evaluate robustness of the method when the sensor suite moves at a high speed and is subject to significant ambient lighting changes.},
@@ -1535,15 +1655,6 @@ file = {:home/chris/Documents/Mendeley Desktop/Robust Monocular SLAM in Dynamic 
 title = {{Robust Monocular SLAM in Dynamic Environments}},
 year = {2013}
 }
-@article{Lopez2011,
-abstract = {In this paper we propose a new approach for$\backslash$nactive SLAM (Simultaneous Localization And Mapping) of$\backslash$nnonholonomic vehicles. Both the environment and the vehicle$\backslash$nmodel are unknown in advance, thus the path planner uses$\backslash$nreinforcement learning to acquire the vehicle model, which is$\backslash$nestimated by a reduced set of transitions. At the same time,$\backslash$nthe vehicle explores the environment creating a consistent map$\backslash$nthrough optimal path motion. The mapping is represented$\backslash$nby sets of ordered and weighted data points, named objects,$\backslash$nthat provide some advantages with respect to conventional$\backslash$nmethods. In order to guide the navigation and to build a map$\backslash$nof the environment the planner employs a three-dimensional$\backslash$ncontroller based on the concept of virtual wall following. Both$\backslash$nsimulation and experimental results are reported to show the$\backslash$nsatisfactory performance of the method.},
-author = {Lopez, Eduardo and {De Bernadis}, Caleb and Martinez-Marin, Tomas},
-file = {:home/chris/Documents/Mendeley Desktop/An Active SLAM Approach for Autonomous Navigation of Nonholonomic Vehicles.pdf:pdf},
-pages = {291----296},
-title = {{An Active SLAM Approach for Autonomous Navigation of$\backslash$nNonholonomic Vehicles}},
-url = {http://aass.oru.se/Agora/ECMR2011/proceedings/papers/ECMR2011{\_}0040.pdf},
-year = {2011}
-}
 @article{Samsonovich1997,
 abstract = {A minimal synaptic architecture is proposed for how the brain might perform path integration by computing the next internal representation of self-location from the current representation and from the perceived velocity of motion. In the model, a place-cell assembly called a "chart" contains a two-dimensional attractor set called an "attractor map" that can be used to represent coordinates in any arbitrary environment, once associative binding has occurred between chart locations and sensory inputs. In hippocampus, there are different spatial relations among place fields in different environments and behavioral contexts. Thus, the same units may participate in many charts, and it is shown that the number of uncorrelated charts that can be encoded in the same recurrent network is potentially quite large. According to this theory, the firing of a given place cell is primarily a cooperative effect of the activity of its neighbors on the currently active chart. Therefore, it is not particularly useful to think of place cells as encoding any particular external object or event. Because of its recurrent connections, hippocampal field CA3 is proposed as a possible location for this "multichart" architecture; however, other implementations in anatomy would not invalidate the main concepts. The model is implemented numerically both as a network of integrate-and-fire units and as a "macroscopic" (with respect to the space of states) description of the system, based on a continuous approximation defined by a system of stochastic differential equations. It provides an explanation for a number of hitherto perplexing observations on hippocampal place fields, including doubling, vanishing, reshaping in distorted environments, acquiring directionality in a two-goal shuttling task, rapid formation in a novel environment, and slow rotation after disorientation. The model makes several new predictions about the expected properties of hippocampal place cells and other cells of the proposed network.},
 author = {Samsonovich, a and McNaughton, B L},
@@ -1559,6 +1670,15 @@ pmid = {9221787},
 title = {{Path integration and cognitive mapping in a continuous attractor neural network model.}},
 volume = {17},
 year = {1997}
+}
+@article{Lopez2011,
+abstract = {In this paper we propose a new approach for$\backslash$nactive SLAM (Simultaneous Localization And Mapping) of$\backslash$nnonholonomic vehicles. Both the environment and the vehicle$\backslash$nmodel are unknown in advance, thus the path planner uses$\backslash$nreinforcement learning to acquire the vehicle model, which is$\backslash$nestimated by a reduced set of transitions. At the same time,$\backslash$nthe vehicle explores the environment creating a consistent map$\backslash$nthrough optimal path motion. The mapping is represented$\backslash$nby sets of ordered and weighted data points, named objects,$\backslash$nthat provide some advantages with respect to conventional$\backslash$nmethods. In order to guide the navigation and to build a map$\backslash$nof the environment the planner employs a three-dimensional$\backslash$ncontroller based on the concept of virtual wall following. Both$\backslash$nsimulation and experimental results are reported to show the$\backslash$nsatisfactory performance of the method.},
+author = {Lopez, Eduardo and {De Bernadis}, Caleb and Martinez-Marin, Tomas},
+file = {:home/chris/Documents/Mendeley Desktop/An Active SLAM Approach for Autonomous Navigation of Nonholonomic Vehicles.pdf:pdf},
+pages = {291----296},
+title = {{An Active SLAM Approach for Autonomous Navigation of$\backslash$nNonholonomic Vehicles}},
+url = {http://aass.oru.se/Agora/ECMR2011/proceedings/papers/ECMR2011{\_}0040.pdf},
+year = {2011}
 }
 @article{Bhatti2016,
 abstract = {A number of recent approaches to policy learning in 2D game domains have been successful going directly from raw input images to actions. However when employed in complex 3D environments, they typically suffer from challenges related to partial observability, combinatorial exploration spaces, path planning, and a scarcity of rewarding scenarios. Inspired from prior work in human cognition that indicates how humans employ a variety of semantic concepts and abstractions (object categories, localisation, etc.) to reason about the world, we build an agent-model that incorporates such abstractions into its policy-learning framework. We augment the raw image input to a Deep Q-Learning Network (DQN), by adding details of objects and structural elements encountered, along with the agent's localisation. The different components are automatically extracted and composed into a topological representation using on-the-fly object detection and 3D-scene reconstruction.We evaluate the efficacy of our approach in Doom, a 3D first-person combat game that exhibits a number of challenges discussed, and show that our augmented framework consistently learns better, more effective policies.},
@@ -2907,18 +3027,6 @@ title = {{Navigation of an autonomous underwater vehicle (AUV) using robust SLAM
 url = {http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=4776914{\%}5Cnhttp://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4776914},
 year = {2006}
 }
-@article{Lee2013,
-abstract = {This paper presents experiments on vision-based localization of an autonomous underwater vehicle (AUV) using graph-based simultaneous localization and mapping (SLAM). Relative range and bearing values of each landmark are obtained from image processing results. And a graph structure is built using the landmark detection results and dead-reckoning data of the AUV. The structured graph is optimized by a graph-based SLAM algorithm. Finally, the performance of the graph-based SLAM is compared to an EKF-based SLAM result.},
-author = {Lee, Donghwa and Kim, Donghoon and Lee, Sangwon and Myung, Hyun and Choi, Hyun Taek},
-doi = {10.1109/URAI.2013.6677329},
-file = {:home/chris/Documents/Mendeley Desktop/Experiments on localization of an AUV using graph-based SLAM.pdf:pdf},
-isbn = {978-1-4799-1197-4},
-journal = {2013 10th Int. Conf. Ubiquitous Robot. Ambient Intell. URAI 2013},
-keywords = {AUV,EKF-based SLAM,SLAM,graph-based SLAM,underwater localization},
-pages = {526--527},
-title = {{Experiments on localization of an AUV using graph-based SLAM}},
-year = {2013}
-}
 @article{Botelho2009a,
 abstract = {The use of Autonomous Underwater Vehicles (AUVs) for underwater tasks is a promising robotic field. These robots can carry visual inspection cameras. Besides serving the activities of inspection and mapping, the captured images can also be used to aid navigation and localization of the robots. Visual odometry is the process of determining the position and orientation of a robot by analyzing the associated camera images. It has been used in a wide variety of non-standard locomotion robotic methods. In this context, this paper proposes an approach to visual odometry and mapping of underwater vehicles. Supposing the use of inspection cameras, this proposal is composed of two stages: i) the use of computer vision for visual odometry, extracting landmarks in underwater image sequences and ii) the development of topological maps for localization and navigation. The integration of such systems will allow visual odometry, localization and mapping of the environment. A set of tests with real robots was accomplished, regarding online and performance issues. The results reveals an accuracy and robust approach to several underwater conditions, as illumination and noise, leading to a promissory and original visual odometry and mapping technique.},
 author = {Botelho, Silvia Silva da Costa and {Drews Junior}, Paulo Lilles Jorge and Figueiredo, M{\^{o}}nica da Silva and Rocha, Celina Haffele Da and Oliveira, Gabriel Leivas},
@@ -2933,6 +3041,18 @@ title = {{Appearance-based odometry and mapping with feature descriptors for und
 url = {http://link.springer.com/10.1007/BF03194505},
 volume = {15},
 year = {2009}
+}
+@article{Lee2013,
+abstract = {This paper presents experiments on vision-based localization of an autonomous underwater vehicle (AUV) using graph-based simultaneous localization and mapping (SLAM). Relative range and bearing values of each landmark are obtained from image processing results. And a graph structure is built using the landmark detection results and dead-reckoning data of the AUV. The structured graph is optimized by a graph-based SLAM algorithm. Finally, the performance of the graph-based SLAM is compared to an EKF-based SLAM result.},
+author = {Lee, Donghwa and Kim, Donghoon and Lee, Sangwon and Myung, Hyun and Choi, Hyun Taek},
+doi = {10.1109/URAI.2013.6677329},
+file = {:home/chris/Documents/Mendeley Desktop/Experiments on localization of an AUV using graph-based SLAM.pdf:pdf},
+isbn = {978-1-4799-1197-4},
+journal = {2013 10th Int. Conf. Ubiquitous Robot. Ambient Intell. URAI 2013},
+keywords = {AUV,EKF-based SLAM,SLAM,graph-based SLAM,underwater localization},
+pages = {526--527},
+title = {{Experiments on localization of an AUV using graph-based SLAM}},
+year = {2013}
 }
 @article{Zhou2008,
 abstract = {This paper presents a novel vision-based sensory package and an information-efficient simultaneous localization and mapping (SLAM) algorithm. Together, we offer a solution for building 3-D dense map in an unknown and unstructured environment with minimal computational costs. The sensory package we adopt consists of a conventional camera and a range imager, which provide range and bearing and elevation inputs as commonly used by 3-D feature-based SLAM. In addition, we propose an algorithm to give the robots the `intelligencerdquo to select, out of the steadily collected data, the maximally informative observations to be used in the estimation process. We show that, although the actual evaluation of information gain for each frame introduces an additional computational cost, the overall efficiency is significantly increased by keeping the matrix compact. The noticeable advantage of this strategy is that the continuously gathered data are not heuristically segmented prior to being input to the filter. Quite the opposite, the scheme lends itself to be statistically optimal and is capable of handling large datasets collected at realistic sampling rates.},
