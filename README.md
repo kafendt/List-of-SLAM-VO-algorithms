@@ -13,3 +13,15 @@ use the list as you wish.
 [List rendered through Jupyter](http://nbviewer.jupyter.org/github/kafendt/List-of-SLAM-VO-algorithms/blob/master/SLAM_table.pdf)
 
 [Download](https://raw.githubusercontent.com/kafendt/List-of-SLAM-VO-algorithms/master/SLAM_table.pdf)
+
+If you would like to cite this repository you can use this BibTeX entry:
+```
+@misc{Kahlefendt2017,
+  author = {Kahlefendt, C.},
+  title = {List of SLAM and Visual Odometry Algorithms},
+  year = {2017},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/kafendt/List-of-SLAM-VO-algorithms/}}
+}
+```
